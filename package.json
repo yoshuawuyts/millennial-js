@@ -17,7 +17,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "marked": "^0.3.6",
-    "read-directory": "^2.1.0",
+    "read-directory": "^3.0.0",
     "tachyons": "^4.8.1"
   },
   "devDependencies": {
