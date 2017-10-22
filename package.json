@@ -1,0 +1,27 @@
+{
+  "name": "millennial-js",
+  "private": true,
+  "description": "Workshop",
+  "main": "index.js",
+  "browserify": {
+    "transform": [
+      "read-directory/transform"
+    ]
+  },
+  "scripts": {
+    "build": "bankai build",
+    "test": "standard",
+    "start": "bankai start"
+  },
+  "author": "Yoshua Wuyts <yoshuawuyts@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "marked": "^0.3.6",
+    "read-directory": "^2.1.0"
+  },
+  "devDependencies": {
+    "bankai": "^9.0.0-rc8",
+    "choo-devtools": "^2.0.0",
+    "standard": "^10.0.3"
+  }
+}
