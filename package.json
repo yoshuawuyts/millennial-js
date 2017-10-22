@@ -3,19 +3,20 @@
   "private": true,
   "description": "Workshop",
   "main": "index.js",
-  "browserify": {
-    "transform": [
-      "read-directory/transform"
-    ]
-  },
   "scripts": {
     "build": "bankai build",
     "test": "standard",
     "start": "bankai start"
   },
+  "browserify": {
+    "transform": [
+      "read-directory"
+    ]
+  },
   "author": "Yoshua Wuyts <yoshuawuyts@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "choo": "^6.5.1",
     "marked": "^0.3.6",
     "read-directory": "^3.0.0",
     "tachyons": "^4.8.1"
