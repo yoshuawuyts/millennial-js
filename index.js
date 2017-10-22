@@ -6,9 +6,8 @@ css('tachyons')
 css('./github.css')
 
 var app = choo()
-if (process.env !== 'production') {
-  app.use(require('choo-devtools')())
-}
+if (process.env !== 'production') app.use(require('choo-devtools')())
+app.use(require('./stores/online'))
 
 app.route('/', require('./views/main'))
 
@@ -18,6 +17,7 @@ var article = require('./views/article')
 Object.keys(mappings).forEach(function (filename) {
   var content = mappings[filename]
   var route = filename.split('.')[0]
+  if (route === 'welcome') route = ''
   app.route('/' + route, article(route, content, mappings))
 })
 

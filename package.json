@@ -18,12 +18,12 @@
   "dependencies": {
     "choo": "^6.5.1",
     "marked": "^0.3.6",
-    "read-directory": "^3.0.0",
     "tachyons": "^4.8.1"
   },
   "devDependencies": {
     "bankai": "^9.0.0-rc8",
     "choo-devtools": "^2.0.0",
+    "read-directory": "^3.0.0",
     "standard": "^10.0.3"
   }
 }
