@@ -8,7 +8,7 @@ Choo is a sturdy framework that's built for maintainability and iteration
 speed. Let's get started by setting up a Choo project.
 
 ```sh
-$ npx create-choo-app million
+$ npx create-choo-app <project-name>
 ```
 
 - Show which steps to take next.

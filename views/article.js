@@ -9,7 +9,7 @@ function view (route, content, mapping) {
   return function (state, emit) {
     return html`
       <body class="sans-serif lh-copy">
-        <main class="mw6 center">
+        <main class="measure-wide center markdown-body mt4">
           ${inner}
         </main>
         <nav class="mw6 center pa3">
