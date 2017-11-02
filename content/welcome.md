@@ -9,6 +9,7 @@ frontend, and backend — then smoothing it over with a nice layer of
 performance. Because performance baby, that's what we're about.
 
 So turn over the next page (like the kids say), and get ready for some
+
 __J A V A S C R I P T__.
 
 ## Requirements

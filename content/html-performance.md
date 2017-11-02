@@ -40,9 +40,8 @@ build some intuition as to how these things work.
 - Create a script tag with an `async` attribute.
 - Create a script tag with `type=module` as an attribute
 - Create a script tag with a `nomodule` attribute.
-- Create a link tag with a preload attribute for a web font.
 
-Now serve all this up with `serve(1)` or `httpser(1)` (which can be installed
+Now serve all this up with `serve(1)` or `httpster(1)` (which can be installed
 from npm). Open up your devtools, navigate to the network tab, and watch how
 things load. If you're looking for some challenges, perhaps try some of these:
 

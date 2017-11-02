@@ -7,17 +7,21 @@ module.exports = view
 function view (route, content, mapping) {
   var inner = raw(marked(content))
   return function (state, emit) {
+    var title = /^#\s+(.*)\n/.exec(content)
+    if (title) title = title[1] || 'Millennial JS'
+
+    emit('DOMTitleChange', title)
     return html`
-      <body class="sans-serif lh-copy">
-        <main class="measure-wide center markdown-body mt4">
-          ${inner}
-        </main>
-        <nav class="mw6 center pa3">
+      <body class="sans-serif lh-copy flex flex-column flex-row-l">
+        <nav class="mw6 center pb3 mt4">
           <h2 class="f3 b mt0">
-            Navigation
+            Millennial JS 🎷
           </h2>
           ${menu(mapping)}
         </nav>
+        <main class="measure-wide center markdown-body mt4 mb4-ns">
+          ${inner}
+        </main>
         <header class="mw6 center pv3">
           Status: ${state.online ? 'online' : 'offline'}
         </header>
