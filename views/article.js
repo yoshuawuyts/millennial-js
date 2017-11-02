@@ -13,17 +13,28 @@ function view (route, content, mapping) {
     emit('DOMTitleChange', title)
     return html`
       <body class="sans-serif lh-copy flex flex-column flex-row-l">
-        <nav class="mw6 center pb3 mt4">
+        <nav class="measure-wide measure-narrow-l center pb3 mt4">
           <h2 class="f3 b mt0">
             Millennial JS 🎷
           </h2>
           ${menu(mapping)}
+          <h3>🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷🎷</h3>
+          <p class="lh-copy">
+            Click on one of the links above to select an exercise. You can run
+            through exercises in any order, but to truly come to understand the
+            angst millennials feel, start at the top — and slowly work your way
+            to the bottom. Also remember you'll never be able to afford
+            retirement, or buy a house. Happy hacking! 🌿
+          </p>
         </nav>
-        <main class="measure-wide center markdown-body mt4 mb4-ns">
+        <main class="measure-wide center markdown-body mv4">
           ${inner}
         </main>
-        <header class="mw6 center pv3">
-          Status: ${state.online ? 'online' : 'offline'}
+        <header class="mw6 center mv2 mt4-l">
+          <strong>
+            Status:
+          </strong>
+          ${state.online ? 'online' : 'offline'}
         </header>
       </body>
     `
