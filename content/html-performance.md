@@ -43,7 +43,10 @@ build some intuition as to how these things work.
 
 Now serve all this up with `serve(1)` or `httpster(1)` (which can be installed
 from npm). Open up your devtools, navigate to the network tab, and watch how
-things load. If you're looking for some challenges, perhaps try some of these:
+things load.
+
+## Bonus Challenges
+If you're looking for some challenges, perhaps try some of these:
 
 - Can you make one defer tag depend on another?
 - Can you load a defer tag first, detect when an async tag loads, and use some

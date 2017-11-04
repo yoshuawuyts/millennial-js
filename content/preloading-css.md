@@ -45,3 +45,10 @@ this is as follows:
 - preload the CSS from HTML using the link tag
 
 ---
+
+## Wrapping up
+And that's it for preloading CSS. If you've paid attention to the loading of
+the page, you might see a flash of unstyled content — a brief flash of unstyled
+DOM elements. We'll dig into how to prevent this in a later exercise.
+
+Next up is preloading webfonts!
