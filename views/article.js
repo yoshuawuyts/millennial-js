@@ -8,7 +8,7 @@ function view (route, content, mapping) {
   var inner = raw(marked(content))
   return function (state, emit) {
     var title = /^#\s+(.*)\n/.exec(content)
-    if (title) title = title[1] || 'Millennial JS'
+    title = title ? title[1] : 'Millennial JS'
 
     emit('DOMTitleChange', title)
     return html`
