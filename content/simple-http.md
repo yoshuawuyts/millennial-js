@@ -9,7 +9,7 @@ but a lot of the times they do too much for what you actually need (hello it
 me, information overload, did you miss me?). We want you to try out building a
 server on your own. 
 
-## exercise 1 
+## exercise 1 - server 
 Your quest is to write up an http module to handle the usual suspects: `req`, `res`.
 
 1. start of by creating an `index.js` file
@@ -30,11 +30,11 @@ Your quest is to write up an http module to handle the usual suspects: `req`, `r
    ![simple-response](../assets/simple-response.gif)
 8. to 🍄  level up 🍄, look into` http.request()`
 
-## exercise 2 
+## exercise 2 - router
 Think of how you might want to handle routing. Although `http.request()` has a
 `path` option, looking at an abstraction is a good idea
 
-1. check out [reg-router](https://github.com/lrlna/reg-router) or [server-router](https://github.com/yoshuawuyts/server-router) as your router options
+1. check out [reg-router](https://github.com/lrlna/reg-router) or [server-router](https://github.com/yoshuawuyts/server-router) as your router options.
 
 ## tipsy tips
 (1) if you're using the browser to access your server, open up the network tab
