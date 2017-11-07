@@ -1,10 +1,9 @@
 # cmprsn 
 
-Ok, we send a ton of data over the wire, the wire that is the internet, the
-mother of all internets. But it's a lot, really quite a lot. So you want to
-compress, and we applaud your decision. A lot of the times, you'll have your
-nginx doing the work for you, but on some occassions you might want to do this
-on a fly. This portion of the workshop is on HTTP compression.
+This portion of the workshop is focused on shrinking the size of data you send
+over to your client, aka the compression chapter. A lot of the times, you'll
+have your nginx doing the work for you, but on some occassions you might want
+to do this on a fly. So let's do some HTTP compression.
 
 ## Exercise
 
@@ -38,7 +37,7 @@ word count to your `curl`:
 $ curl -i -H "accept-encoding:gzip" localhost:8080 | wc
 ```
 
-To 🍄 level up 🍄 , implemenbrotli compression as well!
+To 🍄 level up 🍄 , implent enbrotli compression as well!
 
 ### Hint:
 You might want to create a read stream to send back the html file. Once you're
