@@ -41,10 +41,10 @@ When you're building out your application in development, pino will write to
 `stdout`, so you end up with something like this. Dunno about you, but I
 definitely
 
-![pino-log](./assets/pino-log)
+![pino-log](./assets/pino-log.png)
 
 For the humans in the crowd (sry computers), setup up
-[pino-colada](github.com/lrlna/pino-colada). If you're using merry, you will
+[pino-colada](github.com/lrlna/pino-colada.png). If you're using merry, you will
 already have it. Otherwise just install and add to your `package.json` `npm
 start` command:
 
