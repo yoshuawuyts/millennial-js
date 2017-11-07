@@ -24,7 +24,7 @@ There are a few possible levels you can use in your application:
 
 ## Exercise
 
-Go back to your existing application: either the `merry`, or the `http`
+Go back to your existing application. Pick either the `merry`, or the `http`
 version, and log out the important events following the breakdown above. If
 you're using [merry](github.com/shipharbor/merry), you're already hooked into
 `pino`, so you will be able to log with `ctx.log`. Otherwise, you're going to

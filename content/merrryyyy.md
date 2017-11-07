@@ -1,11 +1,12 @@
 # merrryyyy
 
-What do we want? Middleware! When do we want it? Now! What do we want? Router!
-When do we want it? Now, obvs. duhdoi.
-
 Merry is a cute & simple API framework for the backend. It does the minimal
 amount of things you need to build out your APIs -- middleware, routing and
 logging. Everything else is up to you (you can be anything you want to be).
+
+We found that when working with backend APIs we mostly only need a router and
+some middleware to handle `req` and `res`. Merry comes with just that. Oh! And
+also logging.
 
 Note: If you've done the [http](/simple-http) portion of the workshop, that's good. If you
 haven't, starting here is good too, but we do recommend checking out `http`
@@ -32,8 +33,20 @@ afterwards.
     $ curl -i -d "{'body': 'butts'}" -H 'Content-type: application/json' localhost:{port}
     ```
 
-## up next
-- `merry` uses `pino` under the hood for logging, if you want to learn more
-  check out `pino`, or look into our [chapter on logging patters](./logging).
-- `merry` doesn't have a specific error handling method, but we do have a
-  pattern we like to follow, so checkout our [error part of the workshop](./error-patterns).
+Merry comes with a way to hook up your own middleware in a standard `app.use`
+method. The next thing to do wiwould be to implement one of your own. A pretty
+common one to have is a `CORS` implementation. The middleware signature you are
+going to work with is  `req, res, ctx`.
+
+- start off with writing an `app.use` and passing it `req, res, ctx`
+- to handle `CORS` you need to set `Access-Control-Allow-*`
+  [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) on the
+  `res`
+- `curl -i` to see if they are coming through
+
+## See Also 
+Merry uses `pino` under the hood for logging, if you want to learn more check
+out [pino](github.com/pinojs/pino), or look into our [chapter on logging
+patterns](./logging).
+
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
