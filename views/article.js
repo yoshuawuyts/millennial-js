@@ -44,12 +44,13 @@ function view (route, content, mapping) {
 function menu (mapping) {
   return Object.keys(mapping).map(function (key) {
     var name = key.split('.')[0]
+    var href = name === 'welcome' ? '/' : '/' + name
     return html`
       <div>
         <span>
           →
         </span>
-        <a class="link black underline" href=${'/' + name}>
+        <a class="link black underline" href=${href}>
           ${name}
         </a>
       </div>
