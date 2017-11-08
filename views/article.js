@@ -45,8 +45,8 @@ function view (route, content, mapping) {
 function menu (mapping) {
   return Object.keys(mapping).map(function (key) {
     var name = key.split('.')[0]
-    name = name.replace(/-/g, ' ')
     var href = name === 'welcome' ? '/' : '/' + name
+    name = name.replace(/-/g, ' ')
     return html`
       <div>
         <span>
