@@ -17,6 +17,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "choo": "^6.5.1",
+    "highlight-syntax": "^3.0.2",
     "marked": "^0.3.6",
     "tachyons": "^4.8.1"
   },

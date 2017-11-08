@@ -2,6 +2,7 @@ var readdir = require('read-directory')
 var css = require('sheetify')
 var choo = require('choo')
 
+css('highlight-syntax/light.css')
 css('tachyons')
 css('./github.css')
 
