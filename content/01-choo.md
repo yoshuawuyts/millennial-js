@@ -43,7 +43,7 @@ state, or send an `xhr` call to your server. A new store can be invoked with:
 ```js
 app.use(function (state, emitter) {
   emitter.on('DOMContentLoaded', function () {
-    emitter.on('your:namespaced-event', fucntion () {
+    emitter.on('your:namespaced-event', function () {
     })
   })
 })
