@@ -14,10 +14,23 @@ $ npx create-choo-app <project-name>
 
 ## Exercise 1
 
-Choo has a single state in a form of an object available to you within views
-and stores.
+Choo has a mutable single state in a form of an object available to you within
+views and stores. The data flow end up being something like this. You intreact
+with the DOM, data changes from the DOM are used in the store, and then the
+router. Router triggers the views that then update the DOM. Looks something like this:
 
-A `view` is quite straightforward -- returns a DOM node to be added to the DOM
+```sh
+you -----------→ DOM ←------------  view
+                  |                  ↑ 
+                  |                  | 
+                  |                  |
+                  |                  |
+                  ↓                  |
+                store -----------→ router
+
+```
+
+A `view` returns a DOM node to be added to the DOM
 via a `route`. Its handler normally takes in `(state, emit)`, so you're able
 to manage your content within the view itself. `index.js` file in your
 `create-choo-app` project comes with an example of that.
@@ -51,6 +64,12 @@ application.
 You should have a redirect anchor tag or button to take you to this page in the
 main view, emitting a `emit('pushState', 'newRoute')`. Both views should have a
 reference to the shiny new title.
+
+To troubleshoot as you go along, open up your devtools when working on this in
+the browser. `create-choo-app` already comes with devtools, so you should be
+able to see the events coming in, like `DOMContentLoaded` or the `render`
+event, something like this:
+![choo-devtools](./assets/choo-devtools.gif)
 
 ## See Also
 - https://github.com/choojs/choo
