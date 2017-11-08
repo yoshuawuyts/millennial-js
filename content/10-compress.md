@@ -13,7 +13,7 @@ up to your client.
 
 Modern browsers accept one (or all) three types of compression algorithms:
 `deflate`, `gzip`, and `brotli`. You can see which ones are accepted under the
-requests `Accept-Enconding` header:
+requests `Accept-Encoding` header:
 ![accept-encoding](./assets/accept-encoding.png)
 
 Node has a [zlib](https://nodejs.org/api/zlib.html) implementation, which
