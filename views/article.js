@@ -1,3 +1,4 @@
+var highlight = require('highlight-syntax/all')
 var raw = require('choo/html/raw')
 var html = require('choo/html')
 var marked = require('marked')
@@ -5,7 +6,7 @@ var marked = require('marked')
 module.exports = view
 
 function view (route, content, mapping) {
-  var inner = raw(marked(content))
+  var inner = raw(marked(content, { highlight: highlight }))
   return function (state, emit) {
     var title = /^#\s+(.*)\n/.exec(content)
     title = title ? title[1] : 'Millennial JS'
