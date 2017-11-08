@@ -12,7 +12,7 @@ function view (route, content, mapping) {
 
     emit('DOMTitleChange', title)
     return html`
-      <body class="sans-serif lh-copy flex flex-column flex-row-l">
+      <body class="sans-serif lh-copy flex flex-column flex-row-l ph3 ph0-l">
         <nav class="measure-wide measure-narrow-l center pb3 mt4">
           <h2 class="f3 b mt0">
             Millennial JS 🎷
