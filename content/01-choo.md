@@ -10,12 +10,50 @@ speed. Let's get started by setting up a Choo project.
 ```sh
 $ npx create-choo-app <project-name>
 ```
+![create-choo-app](./assets/create-choo-app.gif)
 
-- Show which steps to take next.
+## Exercise 1
 
-## Tips
-tbi
+Choo has a single state in a form of an object available to you within views
+and stores.
+
+A `view` is quite straightforward -- returns a DOM node to be added to the DOM
+via a `route`. Its handler normally takes in `(state, emit)`, so you're able
+to manage your content within the view itself. `index.js` file in your
+`create-choo-app` project comes with an example of that.
+
+A `store` is what manages your state. When a view sends an `emit` event, a
+store has a handler to make an applicable change. This is also a standard way
+to pass around data within your application -- whether it's to change your
+state, or send an `xhr` call to your server. A new store can be invoked with:
+
+```js
+app.use(function (state, emitter) {
+  emitter.on('DOMContentLoaded', function () {
+    emitter.on('your:namespaced-event', fucntion () {
+    })
+  })
+})
+```
+
+In your `create-choo-app` create an extra button to handle a subtract event.
+Then, in your `store.js` add a handler to update your data.
+
+## Exercise 2
+
+Outside of the custom events you can add to your emitter, choo provides some
+that are built in. The two main ones are `state.events.RENDER` and
+`state.events.PUSHSTATE`. To see how these work, let's create an extra view.
+
+The extra view should have a input field to update a title throughout your
+application.
+
+You should have a redirect anchor tag or button to take you to this page in the
+main view, emitting a `emit('pushState', 'newRoute')`. Both views should have a
+reference to the shiny new title.
 
 ## See Also
 - https://github.com/choojs/choo
 - https://github.com/choojs/create-choo-app
+- https://github.com/choojs/nanocomponent
+- https://github.com/choojs/bankai
