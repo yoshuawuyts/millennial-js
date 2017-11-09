@@ -10,7 +10,7 @@ performance. Because performance baby, that's what we're about.
 
 So turn over the next page (like the kids say), and get ready for some
 
-__J A V A S C R I P T__.
+__ＪＡＶＡＳＣＲＩＰＴ__.
 
 ## Requirements
 This workshop assumes you're running a recent-ish version of Node (>=4.0) and
