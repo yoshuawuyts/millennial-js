@@ -42,7 +42,7 @@ The perf API has a few methods:
   a new performance observer that calls a callback each time a new performance
   entry is created.
 - `observer.observe(opts)`: start listening for performance entries. Requires
-  `opts.entryTypes`. Usually a value of `[ 'measures' ]` is enough, but [other
+  `opts.entryTypes`. Usually a value of `[ 'measure' ]` is enough, but [other
   types](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceEntry/entryType)
   are available.
 
