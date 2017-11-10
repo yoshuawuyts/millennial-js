@@ -10,6 +10,8 @@ function view (route, content, mapping) {
   return function (state, emit) {
     var title = /^#\s+(.*)\n/.exec(content)
     title = title ? title[1] : 'Millennial JS'
+    var docName = route === '' ? 'welcome' : route
+    var editLink = 'https://github.com/yoshuawuyts/millennial-js/edit/master/content/' + docName +'.md'
 
     emit('DOMTitleChange', title)
     return html`
@@ -32,6 +34,7 @@ function view (route, content, mapping) {
           ${inner}
         </main>
         <header class="mw6 center mv2 mt4-l">
+          <a href="${editLink}" class="link black underline mb3 db">Edit on GitHub</a>
           <strong>
             Status:
           </strong>
