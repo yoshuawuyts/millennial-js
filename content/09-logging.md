@@ -38,13 +38,12 @@ log.info('Initial log')
 ```
 
 When you're building out your application in development, pino will write to
-`stdout`, so you end up with something like this. Dunno about you, but I
-definitely
+`stdout`, so you end up with something like this.
 
-![pino-log](./assets/pino-log.png)
+![pino-log](../assets/pino-log.png)
 
 For the humans in the crowd (sry computers), setup up
-[pino-colada](github.com/lrlna/pino-colada.png). If you're using merry, you will
+[pino-colada](github.com/lrlna/pino-colada). If you're using merry, you will
 already have it. Otherwise just install and add to your `package.json` `npm
 start` command:
 
@@ -52,7 +51,7 @@ start` command:
 node ./ | pino-colada
 ```
 
-![pino-colada-log](./assets/pino-colada-log)
+![pino-colada-log](../assets/pino-colada-log.png)
 
 ###  Notes
 In larger applications, you're likely to have different log levels in
