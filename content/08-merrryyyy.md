@@ -30,7 +30,7 @@ afterwards.
    this over with curl with `-d` flag. You might also want to pass over the
    headers as well:
     ```sh
-    $ curl -i -d "{'body': 'butts'}" -H 'Content-type: application/json' localhost:{port}
+    $ curl -i -X POST -d '{"body": "butts"}' -H 'Content-type: application/json' localhost:{port}
     ```
 
 Merry comes with a way to hook up your own middleware in a standard `app.use`
@@ -44,7 +44,7 @@ going to work with is  `req, res, ctx`.
   `res`
 - `curl -i` to see if they are coming through
 
-## See Also 
+## See Also
 Merry uses `pino` under the hood for logging, if you want to learn more check
 out [pino](github.com/pinojs/pino), or look into our [chapter on logging
 patterns](./logging).
