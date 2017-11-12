@@ -10,7 +10,7 @@ speed. Let's get started by setting up a Choo project.
 ```sh
 $ npx create-choo-app <project-name>
 ```
-![create-choo-app](./assets/create-choo-app.gif)
+![create-choo-app](../assets/create-choo-app.gif)
 
 ## Exercise 1
 
@@ -69,7 +69,7 @@ To troubleshoot as you go along, open up your devtools when working on this in
 the browser. `create-choo-app` already comes with devtools, so you should be
 able to see the events coming in, like `DOMContentLoaded` or the `render`
 event, something like this:
-![choo-devtools](./assets/choo-devtools.gif)
+![choo-devtools](../assets/choo-devtools.gif)
 
 ## See Also
 - https://github.com/choojs/choo
