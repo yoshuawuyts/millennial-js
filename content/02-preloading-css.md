@@ -13,9 +13,9 @@ The way to express how `<link>` tags should operate, is through its `preload`
 attribute. The normal way to load CSS is by doing:
 
 ```html
-<header>
+<head>
   <link rel="stylesheet" href="/bundle.css">
-</header>
+</head>
 ```
 
 ## Exercise 1
@@ -36,9 +36,9 @@ first, and once it's loaded, interpret it as CSS. The easiest way to achieve
 this is as follows:
 
 ```html
-<header>
+<head>
   <link rel="preload" as="style" onload="this.rel='stylesheet'">
-</header>
+</head>
 ```
 
 ## Exercise 2
