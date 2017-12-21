@@ -15,7 +15,7 @@ $ npx create-choo-app <project-name>
 ## Exercise 1
 
 Choo has a mutable single state in a form of an object available to you within
-views and stores. The data flow ends up being something like this. You intreact
+views and stores. The data flow ends up being something like this. You interact
 with the DOM, data changes from the DOM are used in the store, and then the
 router. Router triggers the views that then update the DOM. Looks something like this:
 
